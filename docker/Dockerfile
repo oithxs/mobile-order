@@ -1,5 +1,9 @@
 FROM python
 
+ENV FLASK_APP app
+
+ENV FLASK_ENV development
+
 WORKDIR /usr/src/app
 
 COPY ./requirements.txt ./
