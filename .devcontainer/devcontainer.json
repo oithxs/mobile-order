@@ -3,7 +3,7 @@
 {
   "name": "mobile-order",
   "dockerComposeFile": "../docker/docker-compose.yaml",
-  "service": "app",
+  "service": "flask",
   "workspaceFolder": "/usr/src/app",
 
   // Use this environment variable if you need to bind mount your local source code into a new container.
