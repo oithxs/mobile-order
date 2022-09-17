@@ -7,5 +7,5 @@ services:
     image: mobile-order
     container_name: mobile-order
     volumes:
-      - ../app:/usr/src/app
+      - ..:/usr/src/app
     command: flask run --host=0.0.0.0
