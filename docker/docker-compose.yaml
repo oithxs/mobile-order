@@ -2,12 +2,12 @@ version: "3"
 services:
   flask:
     build:
-      context: ../
+      context: ..
       dockerfile: ./docker/Dockerfile
     image: mobile-order
     container_name: mobile-order
     ports:
       - 8080:5000
     volumes:
-      - ../app:/usr/src/app
+      - ..:/usr/src/app
     command: flask run --host=0.0.0.0
