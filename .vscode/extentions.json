@@ -1,7 +1,12 @@
 {
-    "recommendations": [
-        "ms-vscode-remote.vscode-remote-extensionpack",
-        "ms-azuretools.vscode-docker",
-        "MS-CEINTL.vscode-language-pack-ja"
-    ]
+  "recommendations": [
+    "ms-vscode-remote.vscode-remote-extensionpack",
+    "ms-azuretools.vscode-docker",
+    "MS-CEINTL.vscode-language-pack-ja",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "samuelcolvin.jinjahtml",
+    "Glavin001.unibeautify-vscode",
+    "esbenp.prettier-vscode"
+  ]
 }
