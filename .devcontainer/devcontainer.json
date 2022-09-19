@@ -21,7 +21,8 @@
         "ms-python.python",
         "ms-python.vscode-pylance",
         "samuelcolvin.jinjahtml",
-        "Glavin001.unibeautify-vscode"
+        "Glavin001.unibeautify-vscode",
+        "esbenp.prettier-vscode"
       ]
     }
   },
