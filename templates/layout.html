@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>{{ title }}</title>
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="container">
-            <!-- ヘッダー -->
-            <header>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
 
-            </header>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
 
-            <!-- メインコンテンツ -->
-            {% block content %}{% endblock %}
+  <body>
+    <div class="container">
+      <!-- ヘッダー -->
+      <header></header>
 
-            <!-- フッター -->
-            <footer>
-                <p class="text-center">Copyright 2022 HxS</p>
-            </footer>
-        </div>
-        <!-- Javascript -->
-    </body>
+      <!-- メインコンテンツ -->
+      {% block content %}{% endblock %}
+
+      <!-- フッター -->
+      <footer>
+        <p class="text-center">Copyright 2022 HxS</p>
+      </footer>
+    </div>
+    <!-- Javascript -->
+  </body>
+
 </html>
