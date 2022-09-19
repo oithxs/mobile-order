@@ -9,5 +9,8 @@
   },
   "[jinja-html]": {
     "editor.defaultFormatter": "Glavin001.unibeautify-vscode"
+  },
+  "[css][javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
