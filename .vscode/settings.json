@@ -3,5 +3,11 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "editor.formatOnType": true,
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "files.associations": {
+    "*.html": "jinja-html"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "Glavin001.unibeautify-vscode"
+  }
 }
