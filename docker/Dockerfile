@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 
 COPY ./requirements.txt ./
 
-COPY ./app /usr/src/app/
+COPY . /usr/src/app/
 
 RUN pip install --upgrade pip
 
