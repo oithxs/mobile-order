@@ -3,5 +3,15 @@
 {% block title %}ホーム{% endblock %}
 
 {%- block content %}
+  <div id="splash">
+    <div id="splash_logo">
+    Now Loading...
+    </div>
+  </div>
   <h1>ホームのページです</h1>
 {%- endblock %}
+
+{%- block javascript %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <script src="../static/js"></script>
+{%- endblock%}
