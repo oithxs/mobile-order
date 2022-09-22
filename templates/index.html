@@ -4,16 +4,21 @@
 
 {%- block css %}<link rel="stylesheet" href="../static/css/indexs.css">{% endblock %}
 
-{%- block content %}
+{%- block roading %}
   <div id="splash">
     <div id="splash_logo">
     Now Loading...
     </div>
   </div>
+{% endblock %}
+
+{%- block content %}
+  
   <h1>ホームのページです</h1>
 {%- endblock %}
 
 {%- block javascript %}
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
   <script src="../static/js/indexs.js"></script>
 {%- endblock%}
