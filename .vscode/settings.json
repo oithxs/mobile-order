@@ -12,5 +12,8 @@
   },
   "[css][javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "jinja-html": "html"
   }
 }
