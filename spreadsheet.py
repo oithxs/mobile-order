@@ -38,3 +38,5 @@ def main(order_item):
 
     # 降順にソート
     worksheet.sort((8,'des'))
+
+    return ORDER_ID
