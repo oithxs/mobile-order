@@ -13,7 +13,7 @@ def next_available_row(worksheet):
     str_list = list(filter(None, worksheet.col_values(2)))
     return str(len(str_list)+1)
 
-def main():
+def main(order_item):
     # ランダム生成されるID
     ORDER_ID = random.randint(100,999)
     CREDENTIAL_JSON = os.environ['CREDENTIAL_JSON']
@@ -32,12 +32,9 @@ def main():
     # IDを書き込む
     worksheet.update_cell(next_row,1,ORDER_ID)
     # 個数を書き込む
-    worksheet.append_row(ORDER_ITEM,table_range='B'+ next_row)
+    worksheet.append_row(order_item,table_range='B'+ next_row)
     # 時間を書き込む
     worksheet.update_cell(next_row,8,get_time())
 
     # 降順にソート
     worksheet.sort((8,'des'))
-
-if __name__ == "__main__":
-    main()
