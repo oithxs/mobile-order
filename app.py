@@ -19,10 +19,11 @@ def confirm():
 @app.route("/result", methods=["POST"])
 def result():
     
-    cheese = request.form["cheese"]
-    butter = request.form["butter"]
-    salt = request.form["salt"]
-    ketchup = request.form["ketchup"]
+    cheese = int(request.form["cheese"])
+    butter = int(request.form["butter"])
+    salt = int(request.form["salt"])
+    ketchup = int(request.form["ketchup"])
+    
     item = [cheese,butter,salt,ketchup]
     
     order_id = spreadsheet.main(item)
