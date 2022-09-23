@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from crypt import methods
+from flask import Flask, render_template, request
+import spreadsheet
 
 app = Flask(__name__)
 
@@ -14,6 +16,15 @@ def order():
 def confirm():
     return render_template("confirm.html")
 
-@app.route("/result")
+@app.route("/result", methods=["POST"])
 def result():
-    return render_template("result.html")
+    
+    cheese = int(request.form["cheese"])
+    butter = int(request.form["butter"])
+    salt = int(request.form["salt"])
+    ketchup = int(request.form["ketchup"])
+    
+    item = [cheese,butter,salt,ketchup]
+    
+    order_id = spreadsheet.main(item)
+    return render_template("result.html", order_id = order_id)

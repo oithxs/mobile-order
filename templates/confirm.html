@@ -4,4 +4,48 @@
 
 {%- block content %}
   <h1>確認のページです</h1>
+  <div class="container mt-5">
+    <div class="h5">これはスプレッドシートに書き込まれるか確認するためのものです</div>
+    <form action="/result" method="post">
+      <div class="row position-absolute top-50 start-50 translate-middle">
+        <div class="col-6 mb-5">
+          <label for="validationCustom04" class="form-label">チーズ</label>
+          <select class="form-select" aria-label="Default select example" name="cheese">
+            <option selected="selected">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="col-6 mb-5">
+          <label for="validationCustom04" class="form-label">バター醤油</label>
+          <select class="form-select" aria-label="Default select example" name="butter">
+            <option selected="selected">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label for="validationCustom04" class="form-label">塩</label>
+          <select class="form-select" aria-label="Default select example" name="salt">
+            <option selected="selected">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label for="validationCustom04" class="form-label">ケチャップ</label>
+          <select class="form-select" aria-label="Default select example" name="ketchup">
+            <option selected="selected">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">注文する</button>
+      </div>
+    </form>
+  </div>
 {%- endblock %}
