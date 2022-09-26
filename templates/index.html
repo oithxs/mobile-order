@@ -1,7 +1,44 @@
-{%- extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="ja">
 
-{% block title %}ホーム{% endblock %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      ホーム - HxSのフライドポテト屋さん
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/indexs.css">
+  </head>
 
-{%- block content %}
-  <h1>ホームのページです</h1>
-{%- endblock %}
+  <body>
+    <!-- loading -->
+    <div id="loading">
+      <div id="loading_logo">
+        Now Loading...
+      </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <div class="container">
+      <h1>ホームのページです</h1>
+
+      <div class="text-center">
+        <h1>mobile-order</h1>
+        <div class="rounded-pill bg-warning">
+          <p>注文を開始する</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/indexs.js') }}"></script>
+  </body>
+
+</html>
