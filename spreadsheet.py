@@ -4,6 +4,10 @@ from pytz import timezone
 import random
 import os
 from oauth2client.service_account import ServiceAccountCredentials
+from dotenv import load_dotenv
+
+# .envファイルの内容を読み込見込む
+load_dotenv()
 
 CREDENTIAL_JSON = {
   "type": "service_account",
