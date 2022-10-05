@@ -15,5 +15,8 @@
   },
   "emmet.includeLanguages": {
     "jinja-html": "html"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "Glavin001.unibeautify-vscode"
   }
 }
