@@ -1,0 +1,7 @@
+@charset "utf-8";
+button {
+    user-select: none;
+}
+input {
+    user-select: none;
+}
