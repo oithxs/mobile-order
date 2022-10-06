@@ -23,8 +23,11 @@ def result():
     butter = int(request.form["butter"])
     salt = int(request.form["salt"])
     ketchup = int(request.form["ketchup"])
-    
-    item = [cheese,butter,salt,ketchup]
-    
-    order_id = spreadsheet.main(item)
-    return render_template("result.html", order_id = order_id)
+    num = cheese + butter + salt + ketchup
+    if num <= 0:
+        return render_template("result.html", order_id= "1つ以上アイテムを注文してください")
+    else:
+        item = [cheese,butter,salt,ketchup]
+
+        order_id = spreadsheet.main(item)
+        return render_template("result.html", order_id = order_id)
