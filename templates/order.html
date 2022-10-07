@@ -13,36 +13,52 @@
   <div class="card menu">
     <p>塩</p>
     <div class="spin">
-      <button class="spin-minus"> - </button>
-      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled>
-      <button class="spin-plus"> + </button>
+      <button class="spin-minus">
+        -
+      </button>
+      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+      <button class="spin-plus">
+        +
+      </button>
     </div>
-  <div class="card menu">
-    <p>ケチャップ</p>
-    <div class="spin">
-      <button class="spin-minus"> - </button>
-      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled>
-      <button class="spin-plus"> + </button>
+    <div class="card menu">
+      <p>ケチャップ</p>
+      <div class="spin">
+        <button class="spin-minus">
+          -
+        </button>
+        <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <button class="spin-plus">
+          +
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="card menu">
-    <p>三種のチーズ</p>
-    <div class="spin">
-      <button class="spin-minus"> - </button>
-      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled>
-      <button class="spin-plus"> + </button>
+    <div class="card menu">
+      <p>三種のチーズ</p>
+      <div class="spin">
+        <button class="spin-minus">
+          -
+        </button>
+        <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <button class="spin-plus">
+          +
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="card menu">
-    <p>バター醤油</p>
-    <div class="spin">
-      <button class="spin-minus"> - </button>
-      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled>
-      <button class="spin-plus"> + </button>
+    <div class="card menu">
+      <p>バター醤油</p>
+      <div class="spin">
+        <button class="spin-minus">
+          -
+        </button>
+        <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <button class="spin-plus">
+          +
+        </button>
+      </div>
     </div>
-  </div>
-{%- endblock %}
+  {%- endblock %}
 
-{%- block javascript %}
-  <script type="text/javascript" src="{{ url_for('static', filename='js/orders.js') }}"></script>
-{%- endblock %}
+  {%- block javascript %}
+    <script type="text/javascript" src="{{ url_for('static', filename='js/orders.js') }}"></script>
+  {%- endblock %}
