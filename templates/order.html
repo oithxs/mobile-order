@@ -10,7 +10,8 @@
   <h1>注文のページです</h1>
   <p>全品２００円です！</p>
   {# inputタグのdisabledの挙動が怪しい場合、readonly属性に変更してみてください #}
-  <form action="/confirm" methods="POST">
+  <form action="/confirm" method="post">
+    <input type="text" name="hoge" value="hoge">
     <div class="card menu">
       <p>塩</p>
       <div class="spin">

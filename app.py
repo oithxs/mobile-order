@@ -12,17 +12,17 @@ def index():
 def order():
     return render_template("order.html")
 
-@app.route("/confirm", methods=["POST"])
+@app.route("/confirm", methods=["POST"]) 
 def confirm():
     
-    
-    salt = int(request.form.get('salt'))
-    ketchup = int(request.form.get('ketchup'))
-    cheese = int(request.form.get('cheese'))
-    butter = int(request.form.get('butter'))
-    sum_num = salt + ketchup + cheese + butter
-    sum_price = 200*sum_num
-    return render_template("confirm.html", salt = salt, ketchup = ketchup, cheese = cheese, butter = butter, sum_num = sum_num, sum_price = sum_price)
+    hoge = request.form["hoge"]
+    salt = int(request.form.get["salt"])
+    ketchup = int(request.form.get["ketchup"])
+    cheese = int(request.form.get["cheese"])
+    butter = int(request.form.get["butter"])
+    #sum_num = salt + ketchup + cheese + butter
+    #sum_price = 200*sum_num
+    return render_template("confirm.html", salt = salt, ketchup = ketchup, cheese = cheese, butter = butter)#, sum_num = sum_num)
 
 @app.route("/result", methods=["POST"])
 def result():
