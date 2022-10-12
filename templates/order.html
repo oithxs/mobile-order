@@ -10,54 +10,59 @@
   <h1>注文のページです</h1>
   <p>全品２００円です！</p>
   {# inputタグのdisabledの挙動が怪しい場合、readonly属性に変更してみてください #}
-  <div class="card menu">
-    <p>塩</p>
-    <div class="spin">
-      <button class="spin-minus">
-        -
-      </button>
-      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
-      <button class="spin-plus">
-        +
-      </button>
+  <form action="/confirm" methods="POST">
+    <div class="card menu">
+      <p>塩</p>
+      <div class="spin">
+        <button class="spin-minus">
+          -
+        </button>
+        <input name="salt" type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <button class="spin-plus" type="button">
+          +
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="card menu">
-    <p>ケチャップ</p>
-    <div class="spin">
-      <button class="spin-minus">
-        -
-      </button>
-      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
-      <button class="spin-plus">
-        +
-      </button>
+    <div class="card menu">
+      <p>ケチャップ</p>
+      <div class="spin">
+        <button class="spin-minus">
+          -
+        </button>
+        <input name="ketchup" type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <button class="spin-plus" type="button">
+          +
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="card menu">
-    <p>三種のチーズ</p>
-    <div class="spin">
-      <button class="spin-minus">
-        -
-      </button>
-      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
-      <button class="spin-plus">
-        +
-      </button>
+    <div class="card menu">
+      <p>三種のチーズ</p>
+      <div class="spin">
+        <button class="spin-minus">
+          -
+        </button>
+        <input name="cheese" type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <button class="spin-plus" type="button">
+          +
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="card menu">
-    <p>バター醤油</p>
-    <div class="spin">
-      <button class="spin-minus">
-        -
-      </button>
-      <input type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
-      <button class="spin-plus">
-        +
-      </button>
+    <div class="card menu">
+      <p>バター醤油</p>
+      <div class="spin">
+        <button class="spin-minus" type="button">
+          -
+        </button>
+        <input name="butter" type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <button class="spin-plus" type="button">
+          +
+        </button>
+      </div>
     </div>
-  </div>
+    <button class="confirm">
+      注文確認
+    </button>
+  </form>
 
 {%- endblock %}
 
