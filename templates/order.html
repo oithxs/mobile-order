@@ -10,58 +10,63 @@
   <h1>注文のページです</h1>
   <p>全品２００円です！</p>
   {# inputタグのdisabledの挙動が怪しい場合、readonly属性に変更してみてください #}
-  <div class="row justify-content-center">
-    <div class="card text-center menu mb-3 me-2 pb-2" style="width: 10rem;">
-      <p>塩</p>
-      <div class="spin">
-        <button class="spin-minus rounded-circle">
-          －
-        </button>
-        <input type="number" class="spin-input text-center" min="0" max="3" step="1" value="0" disabled="disabled">
-        <button class="spin-plus rounded-circle">
-          ＋
-        </button>
+  <form action="/confirm" method="post">
+    <div class="row justify-content-center">
+      <div class="card text-center menu mb-3 me-2 pb-2" style="width: 10rem;">
+        <p>塩</p>
+        <div class="spin">
+          <button class="spin-minus rounded-circle" type="button">
+            －
+          </button>
+          <input name="salt" type="number" class="spin-input text-center" min="0" max="3" step="1" value="0" readonly="readonly">
+          <button class="spin-plus rounded-circle" type="button">
+            ＋
+          </button>
+        </div>
+      </div>
+      <div class="card text-center menu mb-3 ms-2 pb-2" style="width: 10rem;">
+        <p>ケチャップ</p>
+        <div class="spin">
+          <button class="spin-minus rounded-circle" type="button">
+            －
+          </button>
+          <input name="ketchup" type="number" class="spin-input text-center" min="0" max="3" step="1" value="0" readonly="readonly">
+          <button class="spin-plus rounded-circle" type="button">
+            ＋
+          </button>
+        </div>
       </div>
     </div>
-    <div class="card text-center menu mb-3 ms-2 pb-2" style="width: 10rem;">
-      <p>ケチャップ</p>
-      <div class="spin">
-        <button class="spin-minus rounded-circle">
-          －
-        </button>
-        <input type="number" class="spin-input text-center" min="0" max="3" step="1" value="0" disabled="disabled">
-        <button class="spin-plus rounded-circle">
-          ＋
-        </button>
+    <div class="row  justify-content-center">
+      <div class="card text-center menu me-2 pb-2" style="width: 10rem;">
+        <p>三種のチーズ</p>
+        <div class="spin">
+          <button class="spin-minus rounded-circle" type="button">
+            －
+          </button>
+          <input name="cheese" type="number" class="spin-input text-center" min="0" max="3" step="1" value="0" readonly="readonly">
+          <button class="spin-plus rounded-circle" type="button">
+            ＋
+          </button>
+        </div>
+      </div>
+      <div class="card text-center menu ms-2 pb-2" style="width: 10rem;">
+        <p>バター醤油</p>
+        <div class="spin">
+          <button class="spin-minus rounded-circle" type="button">
+            －
+          </button>
+          <input name="cheese" type="number" class="spin-input text-center" min="0" max="3" step="1" value="0" readonly="readonly">
+          <button class="spin-plus rounded-circle" type="button">
+            ＋
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row  justify-content-center">
-    <div class="card text-center menu me-2 pb-2" style="width: 10rem;">
-      <p>三種のチーズ</p>
-      <div class="spin">
-        <button class="spin-minus rounded-circle">
-          －
-        </button>
-        <input type="number" class="spin-input text-center" min="0" max="3" step="1" value="0" disabled="disabled">
-        <button class="spin-plus rounded-circle">
-          ＋
-        </button>
-      </div>
-    </div>
-    <div class="card text-center menu ms-2 pb-2" style="width: 10rem;">
-      <p>バター醤油</p>
-      <div class="spin">
-        <button class="spin-minus rounded-circle">
-          －
-        </button>
-        <input type="number" class="spin-input text-center" min="0" max="3" step="1" value="0" disabled="disabled">
-        <button class="spin-plus rounded-circle">
-          ＋
-        </button>
-      </div>
-    </div>
-  </div>
+    <button class="confirm">
+      注文確認
+    </button>
+  </form>
 
 {%- endblock %}
 
