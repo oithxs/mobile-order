@@ -11,14 +11,13 @@
   <p>全品２００円です！</p>
   {# inputタグのdisabledの挙動が怪しい場合、readonly属性に変更してみてください #}
   <form action="/confirm" method="post">
-    <input type="text" name="hoge" value="hoge">
     <div class="card menu">
       <p>塩</p>
       <div class="spin">
         <button class="spin-minus" type="button">
           -
         </button>
-        <input name="salt" type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <input name="salt" type="number" class="spin-input" min="0" max="3" step="1" value="0" readonly="readonly">
         <button class="spin-plus" type="button">
           +
         </button>
@@ -30,7 +29,7 @@
         <button class="spin-minus" type="button">
           -
         </button>
-        <input name="ketchup" type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <input name="ketchup" type="number" class="spin-input" min="0" max="3" step="1" value="0" readonly="readonly">
         <button class="spin-plus" type="button">
           +
         </button>
@@ -42,7 +41,7 @@
         <button class="spin-minus" type="button">
           -
         </button>
-        <input name="cheese" type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <input name="cheese" type="number" class="spin-input" min="0" max="3" step="1" value="0" readonly="readonly">
         <button class="spin-plus" type="button">
           +
         </button>
@@ -54,7 +53,7 @@
         <button class="spin-minus" type="button">
           -
         </button>
-        <input name="butter" type="number" class="spin-input" min="0" max="3" step="1" value="0" disabled="disabled">
+        <input name="butter" type="number" class="spin-input" min="0" max="3" step="1" value="0" readonly="readonly">
         <button class="spin-plus" type="button">
           +
         </button>
