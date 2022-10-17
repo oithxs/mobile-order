@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.10.7
 
 ENV FLASK_APP app
 
