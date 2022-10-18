@@ -15,5 +15,6 @@
   },
   "emmet.includeLanguages": {
     "jinja-html": "html"
-  }
+  },
+  "files.eol": "\n"
 }
