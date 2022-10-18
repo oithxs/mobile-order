@@ -4,6 +4,10 @@
 
 {%- block content %}
   <h1>確認のページです</h1>
+  {{salt}}
+  {{ketchup}}
+  {{cheese}}
+  {{butter}}
   <div class="container mt-5">
     <div class="h5">これはスプレッドシートに書き込まれるか確認するためのものです</div>
     <form action="/result" method="post">
@@ -48,4 +52,9 @@
       </div>
     </form>
   </div>
+{%- endblock %}
+
+{%- block javascript %}
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/confirm.js') }}"></script>
 {%- endblock %}

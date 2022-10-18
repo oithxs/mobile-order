@@ -9,3 +9,6 @@
     {{ order_id }}
   </div>
 {%- endblock %}
+{%- block javascript %}
+  <script type="text/javascript" src="{{ url_for('static', filename='js/back.js') }}"></script>
+{%- endblock %}
