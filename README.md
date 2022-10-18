@@ -1,6 +1,6 @@
 # mobile-order
 
-2022年度北山祭にて使用
+2022 年度北山祭で使用
 
 ## 使用技術
 
@@ -19,4 +19,4 @@
 ## 参考
 
 - [Heroku アプリから Google スプレッドシートを操作する際、認証情報を環境変数から読み込みたい](https://qiita.com/a-r-i/items/bb8b8317840e3a87771a)
-- [JavaScriptでブラウザバックを "ほぼ完全禁止" する方法](https://pisuke-code.com/javascript-prohibit-browser-back/)
+- [JavaScript でブラウザバックを "ほぼ完全禁止" する方法](https://pisuke-code.com/javascript-prohibit-browser-back/)
