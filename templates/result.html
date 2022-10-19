@@ -2,12 +2,26 @@
 
 {% block title %}注文完了{% endblock %}
 
-{%- block content %}
-  <h1>注文完了のページです</h1>
+{% block css%}
+  <link rel="stylesheet" href="../static/css/result.css">
+{% endblock %}
 
-  <div class="position-absolute top-50 start-50 translate-middle display-1 fw-bold">
-    {{ order_id }}
+{%- block content %}
+  {# <h1>注文完了のページです</h1> #}
+  <div class="container">
+    <h3>ご注文ありがとうございます。</h3>
+    <h3>お客様の確認番号は</h3>
+    <p class="em weight1" style="text-align:center">{{ order_id }}</p>
+    {# <div class="position-absolute top-50 start-50 translate-middle display-1 fw-bold">
+    <p class="weight1">{{ order_id }}</p>
+  </div> #}
+    <h3>になります。</h3>
+    <h3>店頭にてスタッフにお見せください。</h3>
+    <h5>
+      <p class="color1">※商品の受け渡しには確認番号が必要ですので，このタブは削除しないでください。</p>
+    </h5>
   </div>
+
 {%- endblock %}
 {%- block javascript %}
   <script type="text/javascript" src="{{ url_for('static', filename='js/back.js') }}"></script>
