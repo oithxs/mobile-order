@@ -4,4 +4,6 @@ button {
 }
 input {
   user-select: none;
+  border: none;
+  outline: none;
 }
