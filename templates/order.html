@@ -3,7 +3,7 @@
 {% block title %}注文{% endblock %}
 
 {% block css %}
-  <link rel="stylesheet" href="../static/css/orders.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/orders.css') }}">
 {% endblock %}
 
 {%- block content %}
