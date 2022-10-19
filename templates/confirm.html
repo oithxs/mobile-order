@@ -5,78 +5,77 @@
 {%- block content %}
   <h1 class="text-center">確認のページです</h1>
   <div class="container">
-    <div class="container">
-      <div class="row">
-        <div class="me-auto">
-          <p class="text-center h5 mt-3">ご注文いただきます商品は、こちらでお間違いないでしょうか？</p>
-          <div class="container-fluid">
-            <div class="row mt-4 justify-content-center">
-              <div class="center-block">
-                <form action="/result" method="post">
-                  <div class="mx-auto" style="width:200px;">
-                    <table class="table">
-                      <tbody>
-                        {% if salt != 0 %}
-                          <tr>
-                            <td>塩</td>
-                            <td>x{{salt}}</td>
-                          </tr>
-                        {% endif %}
-                        {% if ketchup != 0 %}
-                          <tr>
-                            <td>ケチャップ</td>
-                            <td>x{{ketchup}}</td>
-                          </tr>
-                        {% endif %}
-                        {% if cheese != 0 %}
-                          <tr>
-                            <td>チーズ</td>
-                            <td>x{{cheese}}</td>
-                          </tr>
-                        {% endif %}
-                        {% if butter != 0 %}
-                          <tr>
-                            <td>バター</td>
-                            <td>x{{butter}}</td>
-                          </tr>
-                        {% endif %}
-                        <tr class="table-active">
-                          <td>合計数</td>
-                          <td>{{sum_num}}</td>
+    <div class="row">
+      <div class="me-auto">
+        <p class="text-center h5 mt-3">ご注文いただきます商品は、こちらでお間違いないでしょうか？</p>
+        <div class="container-fluid">
+          <div class="row mt-4 justify-content-center">
+            <div class="center-block">
+              <form action="/result" method="post">
+                <div class="mx-auto" style="width:200px;">
+                  <table class="table">
+                    <tbody>
+                      {% if salt != 0 %}
+                        <tr>
+                          <td>塩</td>
+                          <td>x{{salt}}</td>
                         </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <p class="text-center mt-4 h5">合計{{sum_price}}円となります。</p>
-                  <p class="text-center mt-4 text-danger">＊注文ボタンを押されるとキャンセルができませんのでご注意ください。</p>
-                  <div class="d-none">
-                    <select aria-label="Default select example" name="cheese">
-                      <option selected="selected">{{cheese}}</option>
-                    </select>
-                    <select aria-label="Default select example" name="butter">
-                      <option selected="selected">{{butter}}</option>
-                    </select>
-                    <select aria-label="Default select example" name="salt">
-                      <option selected="selected">{{salt}}</option>
-                    </select>
-                    <select aria-label="Default select example" name="ketchup">
-                      <option selected="selected">{{ketchup}}</option>
-                    </select>
-                  </div>
-                  <div class="text-center">
-                    <a type="button" class="btn btn-secondary mt-3 text-white mx-2" href="order">キャンセル</a>
-                    <button type="submit" class="btn btn-primary mt-3 mx-2">注文する</button>
-                  </div>
+                      {% endif %}
+                      {% if ketchup != 0 %}
+                        <tr>
+                          <td>ケチャップ</td>
+                          <td>x{{ketchup}}</td>
+                        </tr>
+                      {% endif %}
+                      {% if cheese != 0 %}
+                        <tr>
+                          <td>チーズ</td>
+                          <td>x{{cheese}}</td>
+                        </tr>
+                      {% endif %}
+                      {% if butter != 0 %}
+                        <tr>
+                          <td>バター</td>
+                          <td>x{{butter}}</td>
+                        </tr>
+                      {% endif %}
+                      <tr class="table-active">
+                        <td>合計数</td>
+                        <td>{{sum_num}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              </form>
-            </div>
+                <p class="text-center mt-4 h5">合計{{sum_price}}円となります。</p>
+                <p class="text-center mt-4 text-danger">＊注文ボタンを押されるとキャンセルができませんのでご注意ください。</p>
+                <div class="d-none">
+                  <select aria-label="Default select example" name="cheese">
+                    <option selected="selected">{{cheese}}</option>
+                  </select>
+                  <select aria-label="Default select example" name="butter">
+                    <option selected="selected">{{butter}}</option>
+                  </select>
+                  <select aria-label="Default select example" name="salt">
+                    <option selected="selected">{{salt}}</option>
+                  </select>
+                  <select aria-label="Default select example" name="ketchup">
+                    <option selected="selected">{{ketchup}}</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <a type="button" class="btn btn-secondary mt-3 text-white mx-2" href="order">キャンセル</a>
+                  <button type="submit" class="btn btn-primary mt-3 mx-2">注文する</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-  {%- endblock %}
+{%- endblock %}
 
-  {%- block javascript %}
-    <script type="text/javascript" src="{{ url_for('static', filename='js/confirm.js') }}"></script>
-  {%- endblock %}
+{%- block javascript %}
+  <script type="text/javascript" src="{{ url_for('static', filename='js/confirm.js') }}"></script>
+{%- endblock %}
