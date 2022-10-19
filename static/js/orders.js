@@ -102,9 +102,18 @@ var catsup_num = 0;
 var cheese_num = 0;
 var butter_num = 0;
 
+function order_check() {
+  if (salt_num + catsup_num + cheese_num + butter_num != 0) {
+    $("#order_confirm").prop("disabled", false);
+  } else {
+    $("#order_confirm").prop("disabled", true);
+  }
+}
+
 $("#salt_down").click(function () {
   $("#salt_up").prop("disabled", false);
   salt_num = Number($("#salt").val()) - 1;
+  order_check();
   if (salt_num === 0) {
     $("#salt_down").prop("disabled", true);
   }
@@ -114,6 +123,7 @@ $("#salt_down").click(function () {
 $("#salt_up").click(function () {
   $("#salt_down").prop("disabled", false);
   salt_num = Number($("#salt").val()) + 1;
+  order_check();
   if (salt_num === 3) {
     $("#salt_up").prop("disabled", true);
   }
@@ -123,6 +133,7 @@ $("#salt_up").click(function () {
 $("#catsup_down").click(function () {
   $("#catsup_up").prop("disabled", false);
   catsup_num = Number($("#catsup").val()) - 1;
+  order_check();
   if (catsup_num === 0) {
     $("#catsup_down").prop("disabled", true);
   }
@@ -132,6 +143,7 @@ $("#catsup_down").click(function () {
 $("#catsup_up").click(function () {
   $("#catsup_down").prop("disabled", false);
   catsup_num = Number($("#catsup").val()) + 1;
+  order_check();
   if (catsup_num === 3) {
     $("#catsup_up").prop("disabled", true);
   }
@@ -141,6 +153,7 @@ $("#catsup_up").click(function () {
 $("#cheese_down").click(function () {
   $("#cheese_up").prop("disabled", false);
   cheese_num = Number($("#cheese").val()) - 1;
+  order_check();
   if (cheese_num === 0) {
     $("#cheese_down").prop("disabled", true);
   }
@@ -150,6 +163,7 @@ $("#cheese_down").click(function () {
 $("#cheese_up").click(function () {
   $("#cheese_down").prop("disabled", false);
   cheese_num = Number($("#cheese").val()) + 1;
+  order_check();
   if (cheese_num === 3) {
     $("#cheese_up").prop("disabled", true);
   }
@@ -159,6 +173,7 @@ $("#cheese_up").click(function () {
 $("#butter_down").click(function () {
   $("#butter_up").prop("disabled", false);
   butter_num = Number($("#butter").val()) - 1;
+  order_check();
   if (butter_num === 0) {
     $("#butter_down").prop("disabled", true);
   }
@@ -168,6 +183,7 @@ $("#butter_down").click(function () {
 $("#butter_up").click(function () {
   $("#butter_down").prop("disabled", false);
   butter_num = Number($("#butter").val()) + 1;
+  order_check();
   if (butter_num === 3) {
     $("#butter_up").prop("disabled", true);
   }
