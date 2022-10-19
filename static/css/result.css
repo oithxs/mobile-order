@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.em {
+  font-size: 9em;
+}
+.color1 {
+  color: rgb(224, 13, 13);
+}
+.weight1 {
+  font-weight: bold;
+}
