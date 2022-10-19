@@ -96,3 +96,80 @@
     }
   });
 })();
+
+var salt_num = 0;
+var catsup_num = 0;
+var cheese_num = 0;
+var butter_num = 0;
+
+$("#salt_down").click(function () {
+  $("#salt_up").prop("disabled", false);
+  salt_num = Number($("#salt").val()) - 1;
+  if (salt_num === 0) {
+    $("#salt_down").prop("disabled", true);
+  }
+  $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+});
+
+$("#salt_up").click(function () {
+  $("#salt_down").prop("disabled", false);
+  salt_num = Number($("#salt").val()) + 1;
+  if (salt_num === 3) {
+    $("#salt_up").prop("disabled", true);
+  }
+  $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+});
+
+$("#catsup_down").click(function () {
+  $("#catsup_up").prop("disabled", false);
+  catsup_num = Number($("#catsup").val()) - 1;
+  if (catsup_num === 0) {
+    $("#catsup_down").prop("disabled", true);
+  }
+  $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+});
+
+$("#catsup_up").click(function () {
+  $("#catsup_down").prop("disabled", false);
+  catsup_num = Number($("#catsup").val()) + 1;
+  if (catsup_num === 3) {
+    $("#catsup_up").prop("disabled", true);
+  }
+  $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+});
+
+$("#cheese_down").click(function () {
+  $("#cheese_up").prop("disabled", false);
+  cheese_num = Number($("#cheese").val()) - 1;
+  if (cheese_num === 0) {
+    $("#cheese_down").prop("disabled", true);
+  }
+  $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+});
+
+$("#cheese_up").click(function () {
+  $("#cheese_down").prop("disabled", false);
+  cheese_num = Number($("#cheese").val()) + 1;
+  if (cheese_num === 3) {
+    $("#cheese_up").prop("disabled", true);
+  }
+  $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+});
+
+$("#butter_down").click(function () {
+  $("#butter_up").prop("disabled", false);
+  butter_num = Number($("#butter").val()) - 1;
+  if (butter_num === 0) {
+    $("#butter_down").prop("disabled", true);
+  }
+  $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+});
+
+$("#butter_up").click(function () {
+  $("#butter_down").prop("disabled", false);
+  butter_num = Number($("#butter").val()) + 1;
+  if (butter_num === 3) {
+    $("#butter_up").prop("disabled", true);
+  }
+  $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+});
