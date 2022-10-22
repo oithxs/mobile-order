@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-#main-content {
-  min-height: 100vh;
-}
-
 #st-btn {
   margin-top: calc(100vh * 0.4);
 }
