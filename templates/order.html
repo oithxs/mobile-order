@@ -3,11 +3,10 @@
 {% block title %}注文{% endblock %}
 
 {% block css %}
-  <link rel="stylesheet" href="../static/css/orders.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/orders.css') }}">
 {% endblock %}
 
 {%- block content %}
-  <h1>注文のページです</h1>
   <p>全品２００円です！</p>
   {# inputタグのdisabledの挙動が怪しい場合、readonly属性に変更してみてください #}
   <form action="/confirm" method="post">

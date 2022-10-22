@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+#st-btn {
+  margin-top: calc(100vh * 0.4);
+}
+
 /******** Loading用CSS ********/
 
 /* Loading背景画面 */
