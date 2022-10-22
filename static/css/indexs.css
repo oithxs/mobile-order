@@ -5,7 +5,7 @@
 }
 
 #st-btn {
-  margin-top: calc(100vh / 2);
+  margin-top: calc(100vh * 0.4);
 }
 
 /******** Loading用CSS ********/
