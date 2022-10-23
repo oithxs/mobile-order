@@ -118,6 +118,7 @@ $("#salt_down").click(function () {
     $("#salt_down").prop("disabled", true);
   }
   $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+  $("#result_money").html(200 * (salt_num + catsup_num + cheese_num + butter_num));
 });
 
 $("#salt_up").click(function () {
@@ -128,6 +129,7 @@ $("#salt_up").click(function () {
     $("#salt_up").prop("disabled", true);
   }
   $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+  $("#result_money").html(200 * (salt_num + catsup_num + cheese_num + butter_num));
 });
 
 $("#catsup_down").click(function () {
@@ -138,6 +140,7 @@ $("#catsup_down").click(function () {
     $("#catsup_down").prop("disabled", true);
   }
   $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+  $("#result_money").html(200 * (salt_num + catsup_num + cheese_num + butter_num));
 });
 
 $("#catsup_up").click(function () {
@@ -148,6 +151,7 @@ $("#catsup_up").click(function () {
     $("#catsup_up").prop("disabled", true);
   }
   $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+  $("#result_money").html(200 * (salt_num + catsup_num + cheese_num + butter_num));
 });
 
 $("#cheese_down").click(function () {
@@ -158,6 +162,7 @@ $("#cheese_down").click(function () {
     $("#cheese_down").prop("disabled", true);
   }
   $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+  $("#result_money").html(200 * (salt_num + catsup_num + cheese_num + butter_num));
 });
 
 $("#cheese_up").click(function () {
@@ -168,6 +173,7 @@ $("#cheese_up").click(function () {
     $("#cheese_up").prop("disabled", true);
   }
   $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+  $("#result_money").html(200 * (salt_num + catsup_num + cheese_num + butter_num));
 });
 
 $("#butter_down").click(function () {
@@ -178,6 +184,7 @@ $("#butter_down").click(function () {
     $("#butter_down").prop("disabled", true);
   }
   $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+  $("#result_money").html(200 * (salt_num + catsup_num + cheese_num + butter_num));
 });
 
 $("#butter_up").click(function () {
@@ -188,4 +195,5 @@ $("#butter_up").click(function () {
     $("#butter_up").prop("disabled", true);
   }
   $("#result").html(salt_num + catsup_num + cheese_num + butter_num);
+  $("#result_money").html(200 * (salt_num + catsup_num + cheese_num + butter_num));
 });

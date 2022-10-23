@@ -7,3 +7,9 @@ input {
   border: none;
   outline: none;
 }
+.box{
+  text-align: center;
+}
+input {
+  width: 35px;
+}
