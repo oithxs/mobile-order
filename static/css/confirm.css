@@ -1,6 +1,6 @@
 #order-btn {
   position: absolute;
   bottom: 150px;
-  width: calc(100vw * 0.9);
   margin: 0 auto;
+  width: calc(100vw * 0.9);
 }
