@@ -90,7 +90,7 @@
             <div class="row">
               <div class="col-sm-1 col-md-2 col-4">
                 <div class="text-end">
-                合計金額￥
+                  合計金額￥
                 </div>
               </div>
               <div class="col-sm-6 col-md-8 col-3">
@@ -99,8 +99,14 @@
                 </div>
               </div>
               <div class="col-sm-5 col-md-2 col-5">
-                <button id="order_confirm" class="btn confirm btn-warning" disabled="disabled">
+                <button id="order_confirm" class="btn confirm btn-warning position-relative" disabled="disabled">
                   注文確認
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger">
+                    <div id="result" class="result">
+                      0
+                    </div>
+                    <span class="visually-hidden">個数</span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -109,10 +115,6 @@
       </div>
     </div>
   </form>
-
-  <div id="result" class="result" style="display: none;">
-    0
-  </div>
 
 {%- endblock %}
 
