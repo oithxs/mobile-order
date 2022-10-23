@@ -2,6 +2,10 @@
 
 {% block title %}確認{% endblock %}
 
+{% block css %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/confirm.css') }}">
+{% endblock %}
+
 {%- block content %}
   <div class="container">
     <div class="me-auto">
@@ -60,9 +64,9 @@
                   <option selected="selected">{{ketchup}}</option>
                 </select>
               </div>
-              <div class="text-center">
-                <a type="button" class="btn btn-secondary mt-3 text-white mx-2" href="order">キャンセル</a>
-                <button type="submit" class="btn btn-primary mt-3 mx-2">注文する</button>
+              <div class="row justify-content-around" id="order-btn">
+                <a type="button" class="btn btn-secondary text-white col-4" href="order">キャンセル</a>
+                <button type="submit" class="btn btn-primary col-4">注文する</button>
               </div>
             </form>
           </div>
