@@ -7,13 +7,12 @@ input {
   border: none;
   outline: none;
 }
-.box{
+.box {
   text-align: center;
 }
 input {
   width: 30px;
 }
-
 
 #order_btn {
   position: absolute;
@@ -22,4 +21,9 @@ input {
   left: 0;
   right: 0;
   width: calc(100vw * 0.9);
+}
+
+.updown-btn {
+  width: 2rem;
+  height: 2rem;
 }
