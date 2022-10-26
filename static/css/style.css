@@ -9,3 +9,6 @@ a:active {
   color: black;
   text-decoration: none; /* 下線を無効化 */
 }
+html {
+  touch-action: manipulation;
+}
