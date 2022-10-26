@@ -13,3 +13,13 @@ input {
 input {
   width: 35px;
 }
+
+
+#order_btn {
+  position: absolute;
+  bottom: 100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: calc(100vw * 0.9);
+}
