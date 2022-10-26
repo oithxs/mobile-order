@@ -86,31 +86,23 @@
               </div>
             </div>
           </div>
-          <div class="mt-4 container-fluid">
-            <div class="row">
-              <div class="col-sm-1 col-md-2 col-4">
-                <div class="text-end">
-                  合計金額￥
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-8 col-3">
-                <div id="result_money" class="text-start result">
-                  0
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div class="row justify-content-around" id="order_btn">
-        <a class="btn btn-secondary text-white col-4" href="order">キャンセル</a>
-        <button id="order_confirm" type="submit" class="btn btn-primary confirm position-relative col-4" disabled="disabled">注文確認
-          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger">
+        <div class="position-relative col-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-cart" viewbox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          <span class="top-0 start-100 translate-middle badge rounded-pill text-bg-danger">
             <div id="result" class="result">
               0
             </div>
-            <span class="visually-hidden">個数</span>
           </span>
+          <span id="result_money" class="text-start result">
+            0
+          </span>
+        </div>
+        <button id="order_confirm" type="submit" class="btn btn-primary confirm position-relative col-4" disabled="disabled">注文確認
         </button>
       </div>
     </div>
