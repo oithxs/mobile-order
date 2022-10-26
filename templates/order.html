@@ -37,7 +37,7 @@
           <div class="col mb-3">
             <div class="card ">
               <div class="card-body">
-                <p class="fw-bold card-title text-center">ケチャップ
+                <p class="fw-bold card-title text-center">カレー
                 </p>
                 <div class="spin box">
                   <button id="catsup_down" class="spin-minus rounded-circle" type="button" disabled="disabled">
@@ -98,20 +98,20 @@
                   0
                 </div>
               </div>
-              <div class="col-sm-5 col-md-2 col-5">
-                <button id="order_confirm" class="btn confirm btn-warning position-relative" disabled="disabled">
-                  注文確認
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger">
-                    <div id="result" class="result">
-                      0
-                    </div>
-                    <span class="visually-hidden">個数</span>
-                  </span>
-                </button>
-              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="row justify-content-around" id="test">
+        <a class="btn btn-secondary text-white col-4" href="order">キャンセル</a>
+        <button id="order_confirm" type="submit" class="btn btn-primary confirm position-relative col-4" disabled="disabled">注文確認
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger">
+            <div id="result" class="result">
+              0
+            </div>
+            <span class="visually-hidden">個数</span>
+          </span>
+        </button>
       </div>
     </div>
   </form>
