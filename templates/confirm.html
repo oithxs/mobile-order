@@ -53,7 +53,21 @@
                 </table>
               </div>
               <p class="mt-4 text-danger">＊注文ボタンを押すとキャンセルができませんのでご注意ください。</p>
-              <div class="row justify-content-between" id="order-btn">
+              <div class="d-none">
+                <select aria-label="Default select example" name="cheese">
+                  <select aria-label="Default select example" name="cheese">
+                    <option selected="selected">{{cheese}}</option>
+                  </select>
+                  <select aria-label="Default select example" name="butter">
+                    <option selected="selected">{{butter}}</option>
+                  </select>
+                  <select aria-label="Default select example" name="salt">
+                    <option selected="selected">{{salt}}</option>
+                  </select>
+                  <select aria-label="Default select example" name="ketchup">
+                    <option selected="selected">{{ketchup}}</option>
+                  </select>
+                </div>
                 <a class="btn btn-secondary text-white col-4" id="cancel-btn" href="order">キャンセル</a>
                 <div class="spinner-border text-dark d-none" id="loading" role="status">
                   <span class="visually-hidden">Loading...</span>
