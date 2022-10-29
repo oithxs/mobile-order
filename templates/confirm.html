@@ -9,7 +9,11 @@
 {%- block content %}
   <div class="container">
     <div class="me-auto">
-      <p class="text-center h5 mt-3">注文確認</p>
+      <div class="row">
+        <div class="text-center mx-auto">
+          <p class="fw-bold my-3">注文確認</p>
+        </div>
+      </div>
       <div class="container-fluid">
         <div class="row mt-3 justify-content-center">
           <div class="center-block">
@@ -48,7 +52,7 @@
                   </tbody>
                 </table>
               </div>
-              <p class="text-center mt-4 text-danger">＊注文ボタンを押すとキャンセルができませんのでご注意ください。</p>
+              <p class="mt-4 text-danger">＊注文ボタンを押すとキャンセルができませんのでご注意ください。</p>
               <div class="d-none">
                 <select aria-label="Default select example" name="cheese">
                   <option selected="selected">{{cheese}}</option>
@@ -63,8 +67,11 @@
                   <option selected="selected">{{ketchup}}</option>
                 </select>
               </div>
-              <div class="row justify-content-around" id="order-btn">
-                <a class="btn btn-secondary text-white col-4" href="order">キャンセル</a>
+              <div class="row justify-content-between" id="order-btn">
+                <a class="btn btn-secondary text-white col-4" id="cancel-btn" href="order">キャンセル</a>
+                <div class="spinner-border text-dark d-none" id="loading" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
                 <button type="submit" class="btn btn-primary col-4">注文する</button>
               </div>
             </form>

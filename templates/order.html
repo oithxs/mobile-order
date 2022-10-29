@@ -12,10 +12,10 @@
     <div class="container">
       <div class="row">
         <div class="text-center mx-auto">
-          <p class="fw-bold mt-4">全品２００円です！</p>
+          <p class="fw-bold my-3">全品２００円です！</p>
         </div>
       </div>
-      <div class="py-3 p-lg-5">
+      <div class="p-lg-5">
         <div class="row mx-auto" style="max-width: 900px;">
           <div class="col mb-3">
             <div class="card">
@@ -23,11 +23,11 @@
                 <p class="fw-bold card-title text-center">塩
                 </p>
                 <div class="spin box">
-                  <button id="salt_down" class="btn btn-outline-dark spin-minus rounded-circle" type="button" disabled="disabled">
+                  <button id="salt_down" class="btn btn-outline-dark spin-minus rounded-circle updown-btn p-0" type="button" disabled="disabled">
                     －
                   </button>
                   <input id="salt" name="salt" type="text" class="spin-input text-center px-0" min="0" max="3" step="1" value="0" readonly="readonly">
-                  <button id="salt_up" class="btn btn-outline-dark spin-plus rounded-circle" type="button">
+                  <button id="salt_up" class="btn btn-outline-dark spin-plus rounded-circle updown-btn p-0" type="button">
                     ＋
                   </button>
                 </div>
@@ -40,11 +40,11 @@
                 <p class="fw-bold card-title text-center">カレー
                 </p>
                 <div class="spin box">
-                  <button id="catsup_down" class="btn btn-outline-dark spin-minus rounded-circle" type="button" disabled="disabled">
+                  <button id="catsup_down" class="btn btn-outline-dark spin-minus rounded-circle updown-btn p-0" type="button" disabled="disabled">
                     －
                   </button>
                   <input id="catsup" name="ketchup" type="text" class="spin-input text-center px-0" min="0" max="3" step="1" value="0" readonly="readonly">
-                  <button id="catsup_up" class="btn btn-outline-dark spin-plus rounded-circle" type="button">
+                  <button id="catsup_up" class="btn btn-outline-dark spin-plus rounded-circle updown-btn p-0" type="button">
                     ＋
                   </button>
                 </div>
@@ -58,11 +58,11 @@
                 <p class="fw-bold card-title text-center">三種のチーズ
                 </p>
                 <div class="spin box">
-                  <button id="cheese_down" class="btn btn-outline-dark spin-minus rounded-circle" type="button" disabled="disabled">
+                  <button id="cheese_down" class="btn btn-outline-dark spin-minus rounded-circle updown-btn p-0" type="button" disabled="disabled">
                     －
                   </button>
                   <input id="cheese" name="cheese" type="text" class="spin-input text-center px-0" min="0" max="3" step="1" value="0" readonly="readonly">
-                  <button id="cheese_up" class="btn btn-outline-dark spin-plus rounded-circle" type="button">
+                  <button id="cheese_up" class="btn btn-outline-dark spin-plus rounded-circle updown-btn p-0" type="button">
                     ＋
                   </button>
                 </div>
@@ -75,11 +75,11 @@
                 <p class="fw-bold card-title text-center">バター醤油
                 </p>
                 <div class="spin box">
-                  <button id="butter_down" class="btn btn-outline-dark spin-minus rounded-circle" type="button" disabled="disabled">
+                  <button id="butter_down" class="btn btn-outline-dark spin-minus rounded-circle updown-btn p-0" type="button" disabled="disabled">
                     －
                   </button>
                   <input id="butter" name="butter" type="text" class="spin-input text-center px-0" min="0" max="3" step="1" value="0" readonly="readonly">
-                  <button id="butter_up" class="btn btn-outline-dark spin-plus rounded-circle" type="button">
+                  <button id="butter_up" class="btn btn-outline-dark spin-plus rounded-circle updown-btn p-0" type="button">
                     ＋
                   </button>
                 </div>
@@ -88,8 +88,8 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-around" id="order_btn">
-        <div class="position-relative col-4">
+      <div class="row justify-content-between" id="order_btn">
+        <div class="position-relative col-6 border-bottom">
           <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-cart" viewbox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
           </svg>
@@ -98,11 +98,12 @@
               0
             </div>
           </span>
-          <span id="result_money" class="text-start result">
+          <span id="result_money" class="text-start result align-bottom fs-5">
             0
           </span>
+          <span class="align-bottom text-secondary fs-6">円</span>
         </div>
-        <button id="order_confirm" type="submit" class="btn btn-primary confirm position-relative col-4" disabled="disabled">注文確認
+        <button id="order_confirm" type="submit" class="btn btn-warning confirm position-relative col-4" disabled="disabled">注文確認
         </button>
       </div>
     </div>
