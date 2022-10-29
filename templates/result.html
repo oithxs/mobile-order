@@ -9,11 +9,12 @@
 {%- block content %}
   <div class="container">
     <h3>ご注文ありがとうございます</h3>
-    <h5>お客様の確認番号は</h5>
-    <p class="em weight1" style="text-align:center">{{ order_id }}</p>
-    <h5>になります。</h5>
-    <h5>店頭にてスタッフにお見せください。</h5>
-    <p class="color1 mt-4">* 商品の受け渡しには確認番号が必要ですので，このタブは削除しないでください。</p>
+    <h6>お客様の確認番号は</h6>
+    <div class="text-center em weight1">{{ order_id }}</div>
+    <h6>になります。</h6>
+    <h6>店頭にてスタッフにお見せください。</h6>
+    <div class="color1 mt-2">* 商品の受け渡しには確認番号が必要ですので, このタブは削除しないでください。</div>
+    <div class="color1">* 注文後5分以内に受け取りに来られない場合, 注文を取り消させていただきます。</div>
   </div>
   <div class="pb-5"></div>
 {%- endblock %}
