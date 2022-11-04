@@ -11,6 +11,7 @@
 - Jinja2
 - Bootstrap
 - Google Sheets API
+- Google Apps Script
 - Docker
 - Heroku
 - Visual Studio Code Dev Containers
